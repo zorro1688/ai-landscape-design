@@ -1,0 +1,18 @@
+{
+  "inputUrl": "https://pub-1cb631eb5ac042849c7172fefa03f1cf.r2.dev/landscape/uploads/audit/garden1-v2-1782722242815.jpg",
+  "model": "black-forest-labs/flux-kontext-pro",
+  "outDir": "C:\\Users\\11611\\Desktop\\ai-landscape-design-changes\\test\\test-outputs\\landscape-flowering-refresh-audit-2026-06-30T03-38-31-983Z",
+  "startedAt": "2026-06-30T03:38:47.951Z",
+  "results": [
+    {
+      "id": "minimalist",
+      "label": "Flowering Garden Refresh",
+      "prompt": "Edit this existing yard photo into a flowering garden refresh with preserved hedges, layered flowering shrubs, retained rose-like blooms, pink and red blossoms, natural planting beds, the same garden path, and the same focal lamp. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "hkmgkakh51rmt0cz2tdsk7spk8",
+      "outputUrl": "https://replicate.delivery/xezq/1F3PkeDOHtWFPqz5dnNmX0RcZtiM514S95o4ff1oeQPIE7QbB/tmpmla6aojm.png",
+      "localFile": "minimalist.png"
+    }
+  ],
+  "finishedAt": "2026-06-30T03:38:47.951Z"
+}

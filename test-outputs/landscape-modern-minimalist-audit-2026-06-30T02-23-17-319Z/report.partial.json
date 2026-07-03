@@ -1,0 +1,28 @@
+{
+  "inputUrl": "https://pub-1cb631eb5ac042849c7172fefa03f1cf.r2.dev/landscape/uploads/audit/garden1-v2-1782722242815.jpg",
+  "model": "black-forest-labs/flux-kontext-pro",
+  "outDir": "C:\\Users\\11611\\Desktop\\ai-landscape-design-changes\\test\\test-outputs\\landscape-modern-minimalist-audit-2026-06-30T02-23-17-319Z",
+  "startedAt": "2026-06-30T02:23:17.325Z",
+  "results": [
+    {
+      "id": "modern",
+      "label": "Modern",
+      "prompt": "Edit this existing yard photo into a modern garden planting refresh with natural garden borders, simplified planting, clipped low shrubs, tidy groundcover, and a cleaner version of the existing path. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "rttfmecgcnrmr0cz2sbbbmegyw",
+      "error": null,
+      "outputUrl": "https://replicate.delivery/xezq/nqydBS9YipK2AlG8xWffuiy4t9J7r0r7xEeWdmIMhbsBVbotA/tmpujxchq2w.png",
+      "localFile": "modern.png"
+    },
+    {
+      "id": "minimalist",
+      "label": "Minimalist",
+      "prompt": "Edit this existing yard photo into a minimalist garden planting refresh with natural garden boundaries, reduced planting, low evergreen shrubs, simple groundcover, and a cleaner version of the existing path. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "65b4hg63mnrmy0cz2sb93na7k4",
+      "error": null,
+      "outputUrl": "https://replicate.delivery/xezq/JTuhLwKYD6JPNxh6fjRUnZOAe9wY1949QvVhREp96opuqN0WA/tmpvbb_0rqh.png",
+      "localFile": "minimalist.png"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "inputPath": "C:/Users/11611/Desktop/garden1.jpg",
+  "inputUrl": "https://pub-1cb631eb5ac042849c7172fefa03f1cf.r2.dev/landscape/uploads/audit/garden1-1782720341095.jpg",
+  "model": "black-forest-labs/flux-kontext-pro",
+  "outDir": "C:\\Users\\11611\\Desktop\\ai-landscape-design-changes\\test\\test-outputs\\landscape-style-audit-2026-06-29T08-05-41-090Z",
+  "startedAt": "2026-06-29T08:05:44.635Z",
+  "results": [
+    {
+      "id": "modern",
+      "label": "Modern",
+      "prompt": "Edit this existing yard photo into a modern landscape design with clean geometric planting beds, a minimal plant palette, refined paving materials, and contemporary garden details. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "myrw18xtsxrmw0cz29mvtafpmm",
+      "error": null,
+      "outputUrl": "https://replicate.delivery/xezq/JathEVoMwSoYI5UR3B6l6T6AVYeycVAS24Qd8qerHEiml9zWA/tmpzle6o1il.png",
+      "localFile": "modern.png"
+    },
+    {
+      "id": "mediterranean",
+      "label": "Mediterranean",
+      "prompt": "Edit this existing yard photo into a Mediterranean landscape design with terracotta tones, olive trees, gravel paths, and drought-tolerant plants. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "4gvr5efqd1rmt0cz29ms0ks3tc",
+      "error": null,
+      "outputUrl": "https://replicate.delivery/xezq/O0VRbQmrV9qWA51MRDQVeeVnvfeldjQhUy8vPBPy7bNzX2PbB/tmp82y7q34v.png",
+      "localFile": "mediterranean.png"
+    },
+    {
+      "id": "japanese",
+      "label": "Japanese Zen",
+      "prompt": "Edit this existing yard photo into a Japanese-inspired garden design with raked gravel, moss, natural stones, layered greenery, and carefully pruned shrubs. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "hbb7dptbshrmt0cz29n9khrqa4",
+      "error": null,
+      "outputUrl": "https://replicate.delivery/xezq/4wl3Fl4I9cZmN54tdE0SYZU6FnhhcrQuQel0Szp0520FzezWA/tmpx0f00vlf.png",
+      "localFile": "japanese.png"
+    },
+    {
+      "id": "tropical",
+      "label": "Tropical",
+      "prompt": "Edit this existing yard photo into a lush tropical landscape design with palm trees, broad-leaf plants, and a relaxed resort-style layout. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "sh6vc544knrmr0cz29n9mtp1w0",
+      "error": null,
+      "outputUrl": "https://replicate.delivery/xezq/wBekQ6s7QhU9Mqo8hfgN8yKs51MdChhhUiJK7fHgTz9yM7ntA/tmpkdogn0lo.png",
+      "localFile": "tropical.png"
+    },
+    {
+      "id": "english-garden",
+      "label": "English Garden",
+      "prompt": "Edit this existing yard photo into a English cottage garden design with layered flower beds, climbing roses, and informal winding paths. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "a2jz13yah9rmy0cz29n9xx3p2w",
+      "error": null,
+      "outputUrl": "https://replicate.delivery/xezq/EZlHZGT8eIxNS6KKXn7COovyR78N8ejMrqiOCfShjmjVN7ntA/tmpsnvoxnhi.png",
+      "localFile": "english-garden.png"
+    },
+    {
+      "id": "minimalist",
+      "label": "Minimalist",
+      "prompt": "Edit this existing yard photo into a minimalist landscape design with restrained planting, negative space, and a neutral material palette. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "2sdnfpr47drmy0cz29nsagv2jr",
+      "error": null,
+      "outputUrl": "https://replicate.delivery/xezq/suEDndvBUpLPD57XvNbxQdvKL2Y9LnTLy9k4en9ntdYczezWA/tmp_9ipwutt.png",
+      "localFile": "minimalist.png"
+    },
+    {
+      "id": "desert",
+      "label": "Desert / Xeriscape",
+      "prompt": "Edit this existing yard photo into a drought-tolerant xeriscape design with native grasses, succulents, and decomposed granite paths. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "aywby53g85rmt0cz29nsamj5n8",
+      "error": null,
+      "outputUrl": "https://replicate.delivery/xezq/efh6Ed5yZuv94EeAZ3SKHeoHLo9MDWzh6pVVXeLjOu6m6sfsF/tmpmbbwzf25.png",
+      "localFile": "desert.png"
+    }
+  ],
+  "finishedAt": "2026-06-29T08:07:51.858Z"
+}

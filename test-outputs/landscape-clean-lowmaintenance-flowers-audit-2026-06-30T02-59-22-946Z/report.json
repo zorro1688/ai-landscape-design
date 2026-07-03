@@ -1,0 +1,27 @@
+{
+  "inputUrl": "https://pub-1cb631eb5ac042849c7172fefa03f1cf.r2.dev/landscape/uploads/audit/garden1-v2-1782722242815.jpg",
+  "model": "black-forest-labs/flux-kontext-pro",
+  "outDir": "C:\\Users\\11611\\Desktop\\ai-landscape-design-changes\\test\\test-outputs\\landscape-clean-lowmaintenance-flowers-audit-2026-06-30T02-59-22-946Z",
+  "startedAt": "2026-06-30T02:59:22.948Z",
+  "results": [
+    {
+      "id": "modern",
+      "label": "Clean Garden",
+      "prompt": "Edit this existing yard photo into a clean garden refresh with preserved hedges, trimmed existing shrubs, tidier planting beds, subtle groundcover, retained flowering shrubs, pink and red blossoms, the same garden path, and the same focal lamp. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "h9g0fh4q25rmt0cz2svs5n8dy0",
+      "outputUrl": "https://replicate.delivery/xezq/434Pyh1tYzLpIJEa2Uqgd4fYZ6KmmivqYpeBdeeidB7Ux4QbB/tmpzlyqbk6j.png",
+      "localFile": "modern.png"
+    },
+    {
+      "id": "minimalist",
+      "label": "Low-maintenance Garden",
+      "prompt": "Edit this existing yard photo into a low-maintenance garden refresh with preserved hedges, fewer but natural planting beds, hardy evergreen shrubs, tidy mulch, retained flowering shrubs, pink and red blossoms, the same garden path, and the same focal lamp. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "da8a0wecadrmw0cz2svv2hvhw8",
+      "outputUrl": "https://replicate.delivery/xezq/Xz5DlEw50Y7tE95PBVHMis9mX0tkIlIBLdPg7EtrfVARGHaLA/tmpgbre5kb4.png",
+      "localFile": "minimalist.png"
+    }
+  ],
+  "finishedAt": "2026-06-30T02:59:50.861Z"
+}

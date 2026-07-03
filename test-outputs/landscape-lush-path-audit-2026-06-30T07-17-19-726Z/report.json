@@ -1,0 +1,18 @@
+{
+  "inputUrl": "https://pub-1cb631eb5ac042849c7172fefa03f1cf.r2.dev/landscape/uploads/audit/garden1-v2-1782722242815.jpg",
+  "model": "black-forest-labs/flux-kontext-pro",
+  "outDir": "C:\\Users\\11611\\Desktop\\ai-landscape-design-changes\\test\\test-outputs\\landscape-lush-path-audit-2026-06-30T07-17-19-726Z",
+  "startedAt": "2026-06-30T07:17:37.054Z",
+  "results": [
+    {
+      "id": "tropical",
+      "label": "Lush Foliage Garden",
+      "prompt": "Edit this existing yard photo into a lush foliage garden refresh with broad-leaf planting, layered foliage, bright flowers, relaxed shaded planting beds, the same walkable path surface, and the same focal lamp. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn. Do not replace the walkable path with lawn or grass. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "kdnmhae871rmt0cz2xhtb19xbr",
+      "outputUrl": "https://replicate.delivery/xezq/IpHdGE34GYIJKxss2GPwjdUdhgkxGZLZoRgsq5sXVqFjfIaLA/tmp8iikhoh2.png",
+      "localFile": "tropical.png"
+    }
+  ],
+  "finishedAt": "2026-06-30T07:17:37.054Z"
+}

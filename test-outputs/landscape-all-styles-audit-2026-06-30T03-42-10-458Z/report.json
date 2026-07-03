@@ -1,0 +1,72 @@
+{
+  "inputUrl": "https://pub-1cb631eb5ac042849c7172fefa03f1cf.r2.dev/landscape/uploads/audit/garden1-v2-1782722242815.jpg",
+  "model": "black-forest-labs/flux-kontext-pro",
+  "outDir": "C:\\Users\\11611\\Desktop\\ai-landscape-design-changes\\test\\test-outputs\\landscape-all-styles-audit-2026-06-30T03-42-10-458Z",
+  "startedAt": "2026-06-30T03:42:10.460Z",
+  "results": [
+    {
+      "id": "modern",
+      "label": "Clean Garden",
+      "prompt": "Edit this existing yard photo into a clean garden refresh with preserved hedges, trimmed existing shrubs, tidier planting beds, subtle groundcover, retained flowering shrubs, pink and red blossoms, the same garden path, and the same focal lamp. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "ah8dh8y4gdrmt0cz2tfa6n8fa4",
+      "outputUrl": "https://replicate.delivery/xezq/oXeqYeBXHrp090kD02DGffeSIJ1IFWzwbefNL3HVn0vNPaHaLA/tmpmc1z1rqz.png",
+      "localFile": "modern.png"
+    },
+    {
+      "id": "mediterranean",
+      "label": "Mediterranean",
+      "prompt": "Edit this existing yard photo into a Italian and Mediterranean garden planting with olive trees, lavender, rosemary, warm gravel paths, natural stone edging, and drought-tolerant plants. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "9td8ma7w5srmr0cz2tfb05zj1g",
+      "outputUrl": "https://replicate.delivery/xezq/ugMpEHYfXehMeJkEbQKP1leuD4T4c7buE2hidMqfBzIYl2h2C/tmp640i9uin.png",
+      "localFile": "mediterranean.png"
+    },
+    {
+      "id": "japanese",
+      "label": "Japanese Zen",
+      "prompt": "Edit this existing yard photo into a Japanese-inspired garden design with raked gravel, moss, natural stones, layered greenery, and carefully pruned shrubs. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "tb3avfsg8xrmy0cz2tft6nc6am",
+      "outputUrl": "https://replicate.delivery/xezq/N4zpFuSu4IIHC1f9OX3vf4zgLheudPfVejLxRzGcQZIQn2h2C/tmp1gt35u80.png",
+      "localFile": "japanese.png"
+    },
+    {
+      "id": "tropical",
+      "label": "Tropical",
+      "prompt": "Edit this existing yard photo into a lush tropical garden planting with palms, broad-leaf plants, layered foliage, bright flowers, and relaxed shaded planting beds. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "84k35qbfv1rmw0cz2tfs5g0ahw",
+      "outputUrl": "https://replicate.delivery/xezq/jY7DoMRZ0kbCANfCDPNVTl0rG4rkGOZaRtZVQ4zdySIkaHaLA/tmp9pnx6why.png",
+      "localFile": "tropical.png"
+    },
+    {
+      "id": "english-garden",
+      "label": "English Garden",
+      "prompt": "Edit this existing yard photo into a English garden planting with layered flower beds, roses woven into existing greenery, herbaceous borders, informal winding paths, and garden-only views. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "x2tjxwd4vhrmy0cz2tfr38zvfc",
+      "outputUrl": "https://replicate.delivery/xezq/zfEK7aFY4LxeikhEfAbOSO00JH6pdGtAbxo1WAHrpUFsqdotA/tmp4tcfnc4c.png",
+      "localFile": "english-garden.png"
+    },
+    {
+      "id": "minimalist",
+      "label": "Flowering Garden Refresh",
+      "prompt": "Edit this existing yard photo into a flowering garden refresh with preserved hedges, layered flowering shrubs, retained rose-like blooms, pink and red blossoms, natural planting beds, the same garden path, and the same focal lamp. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "2q78rrera5rmw0cz2tfrka88zg",
+      "outputUrl": "https://replicate.delivery/xezq/UkSBou3fWA0KNiBv01LNNX5AWidGKxY7VBQS2bKthVrxaHaLA/tmpjmf7ffgn.png",
+      "localFile": "minimalist.png"
+    },
+    {
+      "id": "desert",
+      "label": "Desert / Xeriscape",
+      "prompt": "Edit this existing yard photo into a drought-tolerant xeriscape planting with native grasses, succulents, gravel mulch, and dry-climate groundcover; keep the existing path and hedge structure. Preserve the same camera angle, perspective, spatial boundaries, buildings, walls, fences, paths, patios, steps, major trees, hedges, and existing focal objects such as lamps or sculptures. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, or temples. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden corridor and flowering hedge character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn. Do not remove or replace existing focal objects. Only redesign the landscape layer: plants, planting beds, lawn, groundcover, gravel, mulch, stones, lighting mood, and surface materials.",
+      "status": "succeeded",
+      "predictionId": "xfc0aj8dn1rmw0cz2tg9baq5rr",
+      "outputUrl": "https://replicate.delivery/xezq/RUgSVaafb83bcqFxWPHufRD9NaeoFlp1h4RzaMelNb0BX7QbB/tmp2qtvtpfo.png",
+      "localFile": "desert.png"
+    }
+  ],
+  "finishedAt": "2026-06-30T03:43:49.628Z"
+}
