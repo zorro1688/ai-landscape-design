@@ -1,6 +1,7 @@
 ﻿import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/utils/supabase/server";
 import { generateLandscapeDesign, downloadImageBuffer } from "@/lib/replicate";
+import { getOrCreateGardenMask } from "@/lib/landscape-mask";
 import {
   buildLandscapePrompt,
   getStyleById,
@@ -125,8 +126,17 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    // ---- Get (or compute + cache) the building mask for this photo ----
+    // One grounded_sam call per uploaded photo, not per variant — every
+    // style/variant/intensity generated from this same photo reuses it.
+    // See lib/landscape-mask.ts for the caching mechanism.
+    const gardenMaskUrl = await getOrCreateGardenMask(imageUrl);
+
     // ---- Build the prompt and generate all requested variants ----
-    const prompt = buildLandscapePrompt(styleId, customDescription, intensity);
+    // Each variant gets its own call to buildLandscapePrompt so its
+    // differentiator instruction is included; the building itself no longer
+    // needs prompt-level protection since gardenMaskUrl physically excludes
+    // it from regeneration.
     const generatedResults: Array<{
       resultImageUrl: string;
       originalImageUrl: string;
@@ -136,10 +146,23 @@ export async function POST(request: NextRequest) {
 
     try {
       for (let variantIndex = 0; variantIndex < generationPlan.variantCount; variantIndex += 1) {
-        const seed = getLandscapeVariantSeed(user?.id ?? clientIp, styleId, variantIndex, customDescription ?? "", intensity);
-        const variantPrompt = `${prompt} ${getLandscapeVariantInstruction(variantIndex)}`;
+        const variantInstruction = getLandscapeVariantInstruction(styleId, variantIndex);
+        const seed = getLandscapeVariantSeed(
+          user?.id ?? clientIp,
+          styleId,
+          variantIndex,
+          customDescription ?? "",
+          intensity,
+          variantInstruction
+        );
+        const variantPrompt = buildLandscapePrompt(
+          styleId,
+          customDescription,
+          intensity,
+          variantInstruction
+        );
         const generatedImageUrl = await generateLandscapeDesign(
-          { imageUrl, prompt: variantPrompt, seed },
+          { imageUrl, maskUrl: gardenMaskUrl, prompt: variantPrompt, seed },
           generationPlan.tier
         );
 
@@ -271,11 +294,4 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-
-
-
-
-
-
-
 

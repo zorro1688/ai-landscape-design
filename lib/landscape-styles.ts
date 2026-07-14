@@ -13,6 +13,14 @@ export interface LandscapeStyle {
   label: string;
   /** Appended to the user's own description (if any) when building the Replicate prompt. */
   promptFragment: string;
+  /**
+   * A short (~10 word) restatement of the style's 2-3 most essential,
+   * distinctive elements, repeated near the end of the prompt (see
+   * buildLandscapePrompt) so the visual direction doesn't get diluted by the
+   * variant-specific layout instruction sitting between it and the model's
+   * final read of the prompt.
+   */
+  styleAnchor: string;
   category?: "stable" | "creative";
   designBrief: Omit<LandscapeDesignBrief, "styleName">;
 }
@@ -23,7 +31,8 @@ export const LANDSCAPE_STYLES: LandscapeStyle[] = [
     label: "Clean Garden",
     category: "stable",
     promptFragment:
-      "STYLE SIGNATURE - Clean Garden: create an orderly refined garden layout with crisp clipped shrubs, tidy evergreen structure, a refreshed plant palette, fuller flowering shrub groups, stronger seasonal flower color, clean bed edges, restrained flowering accents, organized planting blocks, a redesigned path layout, a clean light gravel or stone-fines path that replaces the original path material, daytime garden markers, and a simple bench or stone seat; the layout language must feel neat, edited, and low-clutter rather than romantic, dry-climate, moss-stone, shade-border, or xeriscape",
+      "Create an orderly refined garden layout with crisp clipped shrubs, tidy evergreen structure, a refreshed plant palette, fuller flowering shrub groups, stronger seasonal flower color, clean bed edges, restrained flowering accents, organized planting blocks, a redesigned path layout, a clean light gravel or stone-fines path that replaces the original path material, daytime garden markers, and a simple bench or stone seat; the layout language must feel neat, edited, and low-clutter rather than romantic, dry-climate, moss-stone, shade-border, or xeriscape",
+    styleAnchor: "Keep it crisp and orderly: clipped evergreen shrubs, clean light gravel paths.",
     designBrief: {
       designFocus: "A tidier, cleaner garden composition that keeps buildings fixed while improving planting structure, path layout, and garden details.",
       plantSuggestions: ["clipped boxwood", "low evergreen shrubs", "compact flowering shrubs", "tidy groundcover"],
@@ -36,7 +45,8 @@ export const LANDSCAPE_STYLES: LandscapeStyle[] = [
     label: "Mediterranean",
     category: "stable",
     promptFragment:
-      "STYLE SIGNATURE - Mediterranean garden-only redesign: create a warm dry-climate garden layout with reduced plain lawn, reduce plain lawn areas, lavender bands, rosemary bands, olive focal planting, silver foliage, agave accents, terracotta planters, limestone chips, natural stone edging, clay paver edging, and terracotta-toned compacted earth paths that replace the original path material; the layout language must feel sun-warmed, aromatic, drought-tolerant, and stone-and-herb based, not like English borders, moss-stone gardens, clean clipped gardens, or shade planting",
+      "Create a Mediterranean garden-only redesign with distinct composition types: asymmetrical herb islands, a single olive or terracotta focal feature, crossing clay paver paths, or an off-center stone bench and water bowl vignette. Use gravel courts, designed planting islands, stone-edged herb beds, lavender bands, rosemary bands, olive focal planting, silver foliage, agave accents, terracotta pot grouping, stone paving pattern, limestone chips, natural stone edging, clay paver edging, and terracotta-toned compacted earth paths that replace the original path material; every central court area must contain planting islands, pots, stone pattern, or a focal feature, not an empty gravel field; avoid repetitive round islands and avoid repeated circular planting islands; the layout language must feel sun-warmed, aromatic, drought-tolerant, gravel-and-stone based, and stone-and-herb based, not like English borders, moss-stone gardens, clean clipped gardens, or shade planting",
+    styleAnchor: "Must include olive trees, lavender, terracotta pots, warm gravel, and stone herb planting.",
     designBrief: {
       designFocus: "A warm, drought-tolerant planting scheme with silver foliage, aromatic herbs, natural stone texture, and a more Mediterranean path rhythm.",
       plantSuggestions: ["olive trees", "lavender", "rosemary", "ornamental grasses", "agave"],
@@ -49,7 +59,8 @@ export const LANDSCAPE_STYLES: LandscapeStyle[] = [
     label: "Moss & Stone Garden",
     category: "stable",
     promptFragment:
-      "STYLE SIGNATURE - Moss & Stone Garden: create a transformative moss and stone garden redesign with a calm asymmetrical moss-and-stone composition with expanded moss groundcover, raked gravel fields, larger natural stone groupings, sculpted shrub forms, ferns, small maples, quiet negative planting space, reworked bed outlines, stone stepping paths or raked gravel paths that replace the original path surface, and a stone lantern-style garden ornament; the layout language must feel quiet, mineral, mossy, and contemplative, not flower-heavy, Mediterranean, clean clipped, shade-border, or xeriscape",
+      "Create a calm asymmetrical garden composition using expanded moss groundcover, raked gravel fields, larger natural stone groupings, sculpted shrub forms, ferns, small maples, quiet negative planting space, reworked bed outlines, stone stepping paths or raked gravel paths that replace the original path surface, and a low stone lantern form; the layout language must feel quiet, mineral, mossy, and contemplative, not flower-heavy, Mediterranean, clean clipped, shade-border, or xeriscape",
+    styleAnchor: "Must include moss groundcover, raked gravel, and natural stone groupings.",
     designBrief: {
       designFocus: "A calm moss-and-stone composition that keeps buildings fixed while reshaping planting, stones, gravel, and circulation for a quieter garden mood.",
       plantSuggestions: ["moss", "pruned evergreen shrubs", "ferns", "small maples", "shade-tolerant groundcover"],
@@ -62,7 +73,8 @@ export const LANDSCAPE_STYLES: LandscapeStyle[] = [
     label: "Shade Planting Borders",
     category: "stable",
     promptFragment:
-      "STYLE SIGNATURE - Shade Planting Borders: create a shade planting border redesign with a cool layered shade garden layout with enlarged side borders, bolder broad-leaf planting masses, hosta, ferns, deeper layered foliage, shade-tolerant flower accents, curved shaded path layout, dark mulch, brick edging, or natural stone surface that replaces the original path material, and daytime-visible border markers; the layout language must feel lush, leafy, enclosed by planting, and shade-friendly, not dry Mediterranean, moss-stone, formal clean, flower-heavy, or xeriscape",
+      "Deep shade borders frame the garden with enlarged side beds, bold broad-leaf planting masses, hosta, ferns, overlapping foliage layers, shade-tolerant flower accents, a curved shaded path or natural stone path, dark mulch, and brick or stone edging. The garden feels lush, leafy, cool, enclosed by planting, and shade-friendly rather than dry, flower-dominated, clipped, or gravel-dominated.",
+    styleAnchor: "Must include broad-leaf hosta and ferns in deep layered shade borders.",
     designBrief: {
       designFocus: "A lush border refresh that frames the garden with broad leaves, shade-friendly texture, and clearer circulation without adding architecture.",
       plantSuggestions: ["hosta", "fern", "canna", "ginger lily", "shade-tolerant flowering perennials"],
@@ -75,7 +87,8 @@ export const LANDSCAPE_STYLES: LandscapeStyle[] = [
     label: "English Garden",
     category: "creative",
     promptFragment:
-      "STYLE SIGNATURE - garden-only English ground-plane redesign: create a romantic flower-rich layout with dense layered herbaceous borders, overflowing rose shrub groups, foxglove, salvia, catmint, soft perennial drifts, informal winding pale pea gravel, brick-edged paths that replace the original path material, small ornamental garden markers, and a simple garden bench with garden-only views; the layout language must feel lush, romantic, informal, and flower-heavy, not Mediterranean dry garden, moss-stone garden, clean clipped garden, shade foliage border, or xeriscape",
+      "Create a garden-only English ground-plane redesign with a romantic flower-rich layout with dense layered herbaceous borders, overflowing rose shrub groups, foxglove, salvia, catmint, soft perennial drifts, informal winding pale pea gravel, brick-edged paths that replace the original path material, small ornamental garden markers, and a simple garden bench with garden-only views; the layout language must feel lush, romantic, informal, and flower-heavy, not Mediterranean dry garden, moss-stone garden, clean clipped garden, shade foliage border, or xeriscape",
+    styleAnchor: "Must include roses and dense layered herbaceous borders, romantic and flower-heavy.",
     designBrief: {
       designFocus: "A romantic, flower-heavy garden concept with layered beds and a more expressive path layout.",
       plantSuggestions: ["roses", "foxglove", "salvia", "catmint", "herbaceous perennials"],
@@ -88,7 +101,8 @@ export const LANDSCAPE_STYLES: LandscapeStyle[] = [
     label: "Flowering Garden Refresh",
     category: "stable",
     promptFragment:
-      "STYLE SIGNATURE - Flowering Garden Refresh: create a flowering garden redesign with a bright seasonal flowering layout with richer flower color blocks, hydrangea, camellia, rose-like flowering shrubs, seasonal flower bands, expanded layered flowering shrubs, varied bloom heights, reshaped natural planting beds, a reshaped path layout, a visibly different gravel, stepping stone, or natural edging material that replaces the original path material, improved bed edges, and daytime garden markers; the layout language must feel colorful, fresh, floral, and homeowner-friendly, not dry Mediterranean, moss-stone, clean clipped, shade foliage, or xeriscape",
+      "Bright seasonal flowers fill reshaped natural beds with richer color blocks, hydrangea, camellia, rose-like flowering shrubs, broad seasonal flower bands, expanded layered flowering shrubs, and varied bloom heights. A curved fine-gravel or stepping-stone path replaces the original path surface and passes between the flower-rich beds with clean natural edging. The garden feels colorful, fresh, floral, abundant, and homeowner-friendly rather than dry, mossy, clipped, foliage-only, or xeric.",
+    styleAnchor: "Must include bright hydrangea and camellia flower color blocks throughout.",
     designBrief: {
       designFocus: "A flower-forward refresh that keeps buildings fixed while increasing color, layered planting, and a more intentional garden path composition.",
       plantSuggestions: ["camellia", "rose-like flowering shrubs", "hydrangea", "low evergreen hedges", "seasonal perennials"],
@@ -101,7 +115,8 @@ export const LANDSCAPE_STYLES: LandscapeStyle[] = [
     label: "Desert / Xeriscape",
     category: "stable",
     promptFragment:
-      "STYLE SIGNATURE - Desert / Xeriscape: create a low-water dry garden layout with large gravel mulch fields, agave, succulent rosettes, sculptural succulent groups, native grass drifts, dry-climate groundcover, natural boulders, reworked bed outlines, decomposed granite paths or redesigned gravel paths that replace the original path material, and low desert stone markers; the layout language must feel arid, sculptural, open, low-maintenance, and mineral, not lush English, mossy, shade-border, clean clipped, or Mediterranean herb garden",
+      "Large gravel-mulch fields and decomposed-granite paths flow continuously between reworked mineral beds filled with agave, succulent rosettes, sculptural succulent groups, native grass drifts, dry-climate groundcover, and natural boulders. Sparse drought-tolerant planting and open mineral surfaces give the whole garden an arid, sculptural, spacious, low-maintenance character rather than a lush, mossy, clipped, shaded, or herb-dominated character.",
+    styleAnchor: "Must include agave, succulent rosettes, and large gravel mulch fields.",
     designBrief: {
       designFocus: "A water-wise xeriscape concept using gravel mulch, sculptural succulents, drought-tolerant texture, and a redesigned dry garden path.",
       plantSuggestions: ["agave", "succulent rosettes", "native grasses", "yucca", "dry-climate groundcover"],
@@ -111,13 +126,33 @@ export const LANDSCAPE_STYLES: LandscapeStyle[] = [
   },
 ];
 
+// Under the mask-based pipeline (lib/landscape-mask.ts + flux-fill-pro),
+// the building region is physically excluded from regeneration — it's
+// copied pixel-for-pixel from the source photo, not redrawn. So the old
+// PRESERVATION_RULES block (300+ words asking the model not to touch the
+// building) is no longer needed at all; that's the whole point of this
+// architecture change. The one thing that IS still worth saying explicitly
+// is this: with the model given free rein over the garden area and no
+// building-preservation text constraining it, it will sometimes borrow
+// stock-photo elements (walls, sheds, gates) from its training data for
+// the requested style. This single rule heads that off.
+const NO_NEW_STRUCTURES_RULE =
+  "Hard boundary rule: the garden's open edges must be preserved on every side of the frame, bordered only by existing hedges and trees, with open sky or foliage visible beyond them. The scene must remain a private residential garden with planting, paths, garden surfaces, and landscape objects only — no other structures of any kind.";
+
+// NOTE: previously had a NO_WATERMARK_RULE here explicitly saying "do not
+// include any watermark, logo, character, or overlaid text." Removed —
+// watermarks got MORE frequent and more legible after adding that rule, not
+// less. Same failure mode as the swimming-pool wording: naming a concept in
+// the prompt, even to forbid it, seems to increase its presence rather than
+// suppress it for this model. Leaving it unmentioned entirely instead.
+
 const INTENSITY_PROMPTS: Record<LandscapeRedesignIntensity, string> = {
   conservative:
-    "Conservative redesign intensity: keep existing layout, path alignment, major trees, hedges, and garden boundaries mostly unchanged; make subtle planting, flower, edging, path-surface, and material improvements while preserving buildings.",
+    "Redesign intensity — conservative: keep the existing bed shapes and path route recognizable; refresh plant varieties, flower color, and bed edging only.",
   balanced:
-    "Balanced redesign intensity: create a noticeable garden-only redesign while preserving buildings, sky, camera angle, original daylight, and main site boundaries; redesign at least 40% of the editable ground-level garden area; do not repeat the source layout; the building must remain the same apparent size, distance, perspective, and same position in the frame; do not make the building appear closer or farther away; paths, planting beds, lawn, stones, water features, and daytime garden markers may change to match the selected style; replace the original path material with a visibly different style-appropriate path material; add new style-specific plant varieties, new flower color layers, and a few non-building landscape elements such as benches, decorative planters, daytime garden markers, stones, or water features; replace and reshape planting beds, introduce a new plant palette, change flower colors, add layered shrubs and groundcover masses, and redesign path layout, path materials, and bed outlines.",
+    "Redesign intensity — balanced: rework at least 40% of the garden area; reshape planting beds, introduce a new plant palette, and replace the path material with a different style-appropriate surface; do not repeat the source layout.",
   creative:
-    "Creative redesign intensity: create a noticeable strong garden-only redesign with a distinct plant palette; redesign at least 60% of the editable ground-level garden area; do not repeat the source layout; add new style-specific plant varieties, new flower color layers, and add new non-building landscape elements such as benches, daytime garden markers, stones, water features, decorative planters, and small garden ornaments; visibly replace and reshape planting beds, change flower colors, add richer shrub layers, groundcover masses, stones, water features, and stronger garden design details while preserving original daylight; paths may be redesigned or rerouted within the same yard, and use a visibly different style-appropriate path material instead of the original path material; daytime garden markers may be added or repositioned, but do not change the scene into dusk, evening, or night; keep existing buildings fixed at the same apparent size, distance, perspective, and same position in the frame, but do not add buildings, rooms, roofs, walls, pavilions, gazebos, temples, pergolas, sheds, or architectural structures.",
+    "Redesign intensity — creative: rework at least 60% of the garden area; reroute or reshape the path, replace its material, introduce a distinct plant palette, and add new landscape objects such as a bench, planters, or stones; do not repeat the source layout.",
 };
 
 export function getStyleById(styleId: string): LandscapeStyle | undefined {
@@ -133,7 +168,7 @@ function buildUserRequestPrompt(customDescription?: string): string | null {
   const hasCenterPlacement = /中间|中央|中心|middle|center|centre/i.test(rawRequest);
 
   if (hasWaterFeature) {
-    hints.push("add a clearly visible small garden pond, reflecting pool, or garden water feature");
+    hints.push("add a small birdbath, fountain basin, or stone water bowl feature, sized as a single garden ornament");
   }
 
   if (hasCenterPlacement) {
@@ -165,37 +200,51 @@ export function getLandscapeDesignBrief(styleId: string): LandscapeDesignBrief {
 }
 
 /**
- * Builds the final prompt sent to the image model, combining the
- * selected style preset with any free-text description the user typed.
+ * Builds the prompt sent to flux-fill-pro for the garden (mask-white) area
+ * only. Combines the selected style, an optional variant-specific layout
+ * brief, the user's free-text request, and the redesign intensity, plus the
+ * no-new-structures anti-hallucination rule.
+ *
+ * Ordering: style description and variant instruction are both placed in
+ * the front section, back to back, rather than one strictly ahead of the
+ * other. The style's `styleAnchor` (2-3 essential elements, ~10 words) is
+ * repeated again near the end — observed behavior was the variant
+ * instruction sitting between the style text and the model's final read of
+ * the prompt was enough to dilute style fidelity (Mediterranean losing its
+ * olive trees/terracotta in 2 of 4 variants), even with the full style text
+ * present earlier. The no-new-structures rule is likewise stated once up
+ * front and again at the end for the same reason.
+ *
+ * Deliberately does NOT mention watermarks/logos anywhere (see the note by
+ * the removed NO_WATERMARK_RULE above) — naming that concept to forbid it
+ * made watermarks appear more often and more legibly, not less.
  */
 export function buildLandscapePrompt(
   styleId: string,
   customDescription?: string,
-  intensity: LandscapeRedesignIntensity = "balanced"
+  intensity: LandscapeRedesignIntensity = "balanced",
+  variantInstruction?: string
 ): string {
   const style = getStyleById(styleId);
   const styleText = style
     ? style.promptFragment
-    : "a beautifully redesigned outdoor landscape";
-
-  const preservationRules =
-    "Preserve the same camera angle, perspective, spatial boundaries, buildings, building facades, rooflines, windows, doors, walls attached to buildings, fences, patios, steps, sky, lighting, shadows, exposure, and main site boundaries. Treat the building and sky as locked background. The building must remain the same apparent size, distance from camera, perspective, and same position in the frame. The building must align with the before image and visually overlap the original building in a before-after comparison. Do not move the building, crop it differently, zoom in, zoom out, rotate it, change its angle, or make the building appear closer or farther away. The building footprint, roofline, facade, windows, doors, visible wall edges, roof color, stone color, window count, and chimney position must stay fixed. Preserve the original daylight, same brightness and color temperature, same shadow direction, and same exposure. Do not darken the image, do not change the time of day, do not create dusk, evening, night, cinematic mood, dramatic shadows, warm glowing windows, or artificial lighting atmosphere. Garden paths may be redesigned, rerouted, reshaped, widened, narrowed, or resurfaced to match the selected style. Change the path material and replace the original path material with a style-appropriate surface; do not keep the original path material unchanged. Landscape-only objects such as benches, daytime garden markers, small ornaments, decorative planters, stones, water features, planting beds, lawn, groundcover, mulch, gravel, and surface materials may be added, replaced, or repositioned. Do not add new buildings, houses, roofs, rooms, walls, pavilions, gazebos, temples, teahouses, pergolas, sheds, or architectural structures. If the source image has no visible building facade, do not introduce any building facade, windows, roofline, or brick wall. Do not turn this garden path photo into a courtyard, residential property, villa, estate, resort, patio between buildings, or architectural scene. Do not reinterpret the scene as a side yard, alley, corridor, courtyard, building passage, or narrow walled garden. Do not create tall blank walls. Do not create a narrow passage between buildings. Keep the scene as an outdoor garden path bordered by plants. Keep the original open planted garden character. Do not replace flowering shrubs or colored blossoms with plain green hedges or plain lawn; instead increase visible plant variety, flower color, layered shrubs, and groundcover texture. Do not erase all walkable circulation; keep or create a visible gravel, brick, stepping stone, decomposed granite, natural stone, or compacted earth walking surface. Only redesign the landscape layer: plants, new plant varieties, planting beds, flowers, lawn, groundcover, gravel, mulch, stones, benches, decorative planters, water features, daytime garden markers, path layout, and surface materials.";
+    : "a beautifully redesigned outdoor garden";
+  const styleAnchor = style?.styleAnchor;
 
   const userRequest = buildUserRequestPrompt(customDescription);
-  const requestPrefix = userRequest ? `${userRequest} ` : "";
 
-  return `CRITICAL EDIT BOUNDARY: copy the architecture, sky, lighting, and camera geometry from the input image. Do not apply whole-image style transfer. Edit only the ground-level garden plane. ${requestPrefix}${preservationRules} ${INTENSITY_PROMPTS[intensity]} Garden-only style target: ${styleText}. The selected style signature must dominate the editable landscape layer: use the style-specific layout language, plant palette, path material, bed shape, and landscape-only elements. Do not produce a generic garden refresh that looks similar across different styles. Follow the option-specific complete design brief appended after this base prompt as the final layout direction.`;
+  const parts = [
+    NO_NEW_STRUCTURES_RULE,
+    styleText,
+    variantInstruction,
+    userRequest,
+    INTENSITY_PROMPTS[intensity],
+    styleAnchor,
+    NO_NEW_STRUCTURES_RULE,
+  ];
+
+  return parts.filter(Boolean).join(" ");
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
