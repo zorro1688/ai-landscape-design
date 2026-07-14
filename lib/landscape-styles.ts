@@ -137,7 +137,7 @@ export const LANDSCAPE_STYLES: LandscapeStyle[] = [
 // stock-photo elements (walls, sheds, gates) from its training data for
 // the requested style. This single rule heads that off.
 const NO_NEW_STRUCTURES_RULE =
-  "Hard boundary rule: the garden's open edges must be preserved on every side of the frame, bordered only by existing hedges and trees, with open sky or foliage visible beyond them. The scene must remain a private residential garden with planting, paths, garden surfaces, and landscape objects only — no other structures of any kind.";
+  "Hard boundary rule: the garden's open edges must be preserved on every side of the frame, bordered only by existing hedges and trees, with open sky or foliage visible beyond them, even in the deep background or distant view. The scene must remain a private residential garden with planting, paths, garden surfaces, and landscape objects only — no other structures of any kind.";
 
 // NOTE: previously had a NO_WATERMARK_RULE here explicitly saying "do not
 // include any watermark, logo, character, or overlaid text." Removed —
@@ -245,12 +245,3 @@ export function buildLandscapePrompt(
 
   return parts.filter(Boolean).join(" ");
 }
-
-
-
-
-
-
-
-
-

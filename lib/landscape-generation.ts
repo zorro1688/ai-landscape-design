@@ -99,6 +99,23 @@ export function getLandscapeVariantInstruction(styleId: string, variantIndex: nu
   const variants = STYLE_VARIANT_OVERRIDES[styleId] ?? FALLBACK_VARIANT_INSTRUCTIONS;
   return variants[variantIndex % variants.length];
 }
+// Scoped fix for one confirmed bad combination: Clean Garden's ("modern")
+// 4th design option (variantIndex 3) reliably reproduces an extra building
+// in the background — a fixed seed landing near a specific memorized
+// training photo, not a prompt-following failure, so no wording change
+// fixes it (same root cause as a generation reproducing a stock-photo
+// watermark, just for scene content instead of text).
+//
+// The salt is applied ONLY to this one styleId+variantIndex pair. Every
+// other style/variant keeps the exact same seed it has always produced —
+// they aren't broken, so their seeds shouldn't change just because this one
+// combination needed to move away from a bad point. If another specific
+// combination is later found to have the same issue, add its own scoped
+// entry here rather than reaching for a global salt again.
+const SEED_SALT_OVERRIDES: Record<string, string> = {
+  "modern:3": "v2-fix-extra-background-building",
+};
+
 export function getLandscapeVariantSeed(
   userKey: string,
   styleId: string,
@@ -107,7 +124,8 @@ export function getLandscapeVariantSeed(
   intensity = "balanced",
   variantInstruction = ""
 ): number {
-  const input = `${userKey}:${styleId}:${variantIndex}:${customDescription.trim()}:${intensity}:${variantInstruction}`;
+  const salt = SEED_SALT_OVERRIDES[`${styleId}:${variantIndex}`] ?? "";
+  const input = `${salt}:${userKey}:${styleId}:${variantIndex}:${customDescription.trim()}:${intensity}:${variantInstruction}`;
   let hash = 2166136261;
 
   for (let i = 0; i < input.length; i += 1) {
@@ -169,5 +187,3 @@ export function buildLandscapeDesignResult({
     designBrief: buildDesignBriefForRequest(styleId, customDescription),
   };
 }
-
-
